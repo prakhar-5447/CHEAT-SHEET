@@ -1,0 +1,460 @@
+/*group selector to add css to all*/
+footer,
+header,
+span,
+p {
+  background-color: red !important; /* !important it can not be overwrite */
+  border-radius: 3px;
+  color: greenyellow;
+  background-color: #ff4532; /* Color by hex value */
+  background-color: blueviolet; /* Color by name */
+  background-color: rgba(59, 160, 28, 0.664); /* Color by rgba */
+  width: 455px; /*to change width*/
+  width: 45%;
+  height: 100px; /*to vhange hight*/
+  height: 45%;
+}
+
+/*class selector to add css to element have this class name*/
+.redElement,
+p.Element {
+}
+
+/*id selector to add css to element containing this id*/
+#firstPara {
+}
+
+div p /* p if present inside div*/
+ /* if p is contained by any box which is contained by div */
+{ 
+     color: rgb(0, 0, 128);
+     background-color: orange;
+     font-weight: bold;
+} 
+div>p /* p is in direct child of div*/
+/* if p is right inside div then this CSS will be applied */
+{ 
+     background-color: lightblue;
+     color:white;
+} 
+div+p /* p is present after div*/
+/* if p is right after div i.e p is the next sibling of div*/
+{
+     color: white;
+     background-color:#D2302C;
+}
+
+/* Fonts */
+p {
+  font-family: ‘Franklin Gothic Medium’, ‘Aerial Narrow’, Aerial, sans-serif;
+  font-size: 33px;
+  font-style: italic;
+  line-height: 1.8em;
+  font-weight: bold;
+}
+
+/* Border */
+p {
+  /* border-width: 4px; 
+    border-color: green;
+    border-style: solid; */
+  border: 4px solid green; /* to add all this at onr line */
+  border-radius: 11px;
+
+  /* border side */
+  border-top: 2px solid rgb(231, 22, 231);
+  border-right: 2px solid rgb(18, 10, 133);
+  border-bottom: 2px solid rgba(9, 144, 27, 0.774);
+  border-left: 2px solid rgb(156, 42, 13);
+
+  /* border radius */
+  border-top-left-radius: 4px;
+  border-top-right-radius: 14px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 24px;
+
+  background-image: url("https://codewithharry.com/static/common/img/photo.png"); /* add image to background*/
+  background-repeat: no-repeat;
+  /* repeat-y will make it repeat on y axis */
+  /* repeat-x will make it repeat on x axis */
+  /* no-repeat will stop repeat on both axis */
+
+  background-position: center center;
+  /* example */
+  /* background-position: 192px 34px; */
+  /* background-position: bottom right; */
+  /* background-position: top center; */
+}
+
+/* Margin and padding */
+p {
+  /* padding: y(top/bottom) x(left/right); */
+  /* margin: y(top/bottom) x(left/right); */
+  padding: 34px 19px;
+  margin: 14px 19px;
+
+  /* We can set margin/padding for  top, bottom, left and right like this */
+  /* padding-top: 79px;
+    padding-bottom: 79px;
+    padding-left: 34px; 
+    padding-right: 79px;*/
+
+  /* margin-top: 3px;
+    margin-bottom: 5px;
+    margin-left: 34px;
+    margin-right:5px ; */
+
+  /* margin = top right bottom left;  */
+  /* padding = top right bottom left;  */
+  /* example */
+  /* padding: 23px 56px 6px 78px;   */
+  /* margin: 23px 56px 6px 78px;   */
+
+  box-sizing: border-box; /*to make default margin and padding to 0px*/
+}
+
+/* Float */
+p {
+  float: right;
+  float: left;
+  clear: left;
+  clear: right;
+  clear: both;
+}
+
+/* Text */
+p {
+  text-align: justify;
+  text-align: right;
+  text-align: left;
+  text-align: center;
+
+  /* 10em means ten times of the parent element */
+  font-size: 10em;
+  /* 10em means ten times of the root element/default size of html */
+  font-size: 10erm;
+  /* vh is equal to the 1/100 times of the viewport height */
+  font-size: 10vh;
+  /* vw is equal to the 1/100 times of the viewport width */
+  font-size: 10vw;
+
+}
+
+/* Decoration */
+p {
+  cursor: pointer;
+  text-decoration: none; /*to hide underline in link (anchor tag)*/
+  list-style: none; /*to hide bullet in list*/
+}
+
+a:hover {
+} /*on hover*/
+a:visited {
+} /*on click*/
+a:active {
+} /*on revisit*/
+
+/* CSS Position: static (default), relative, absolute, fixed, sticky */
+p {
+    /*relative: Positions the element relative to its normal positon and will leave a gap at its normal position*/
+  position: relative; 
+  top: 34px;
+  left: 134px; 
+  
+  /*absolute: Positions the element relative to the positon of its first parent*/
+  position: absolute; 
+  top: 34px;
+  left: 134px; 
+  
+  /*fixed: Positions the element relative to the browser window*/
+  position: fixed;
+  right: 4px;
+  bottom: 2px 
+
+  /*sticky: Positions the element relative to the users scroll position*/
+  position: sticky;
+  top: 3px;
+}
+
+/* Display */
+p{
+    overflow: auto;
+    display: block;
+    z-index: -165; /* z-index  will work only for position: relative, absolute, fixed or sticky; */
+    display: none;  /* will hide the element and the space */
+    visibility:hidden;  /* will hide the element but will show its empty space */
+    display: flex; /* Initialize the container as a flex box */
+    display: grid;  /* Initialize the container as a grid */
+}
+
+/* Flex */
+p{
+    display: flex; /* Initialize the container as a flex box */
+     /* Flex properties for a flex container */
+
+            flex-direction: row; /* (Default value of flex-direction is row) */
+            flex-direction: column;
+            flex-direction: row-reverse;
+            flex-direction: column-reverse; 
+            
+
+            flex-wrap: wrap;  /* (Default value of flex-direction is no-wrap) */
+            flex-wrap: wrap-reverse;
+            /* This is a shorthand for flex-direction: and flex-wrap: ;; */
+            flex-flow: row-reverse wrap; 
+
+            /* justify-content will justify the content in horizontal direction */
+            justify-content: center;
+            justify-content: space-between;
+            justify-content: space-evenly;
+            justify-content: space-around;
+
+            /* justify-content will justify the content in vertical direction */
+            align-items: center;
+            align-items: flex-end;
+            align-items: flex-start;
+            align-items: stretch; 
+
+            order: 2;
+             /* Flex properties for a flex item */
+            /* Higher the order, later it shows up in the container */
+
+            /* flex-grow: 2;
+            flex-shrink: 2; */
+            flex-basis: 160px;
+            /* when flex-direction is set to row flex-basis: will control width */
+            /* when flex-direction is set to column flex-basis: will control height */
+            /* flex: 2 2 230px; */
+   
+            align-self: flex-start;
+            align-self: flex-end;
+            align-self: center;
+}
+
+/* Media quiries */
+@media screen and (max-width: 800px)
+{
+#contents{width:90%}
+}
+/* @media: A media query always starts with @media
+Screen: It is the applicable media type
+max-width: It is the media feature.
+#contents{width:90%} : It is the CSS to be applied when the conditions are met */
+/* example */
+@media (min-width: 400px)
+{
+#box1{
+  display: block;  
+     } 
+} 
+@media (min-width: 450px) and (max-width: 600px)
+{
+#box2{
+ display: block;
+ background-color: teal; 
+     }
+}
+
+/* More selectors */
+input[type='text'] {}
+input[type='email'] {}
+a[target] {}
+a[target='_self']  {}
+li:nth-child(3) {} /* This will apply css for third child */
+li:nth-child(3n+2) {}
+li:nth-child(even) {} /* This will apply css for even child */
+li:nth-child(odd) {} /* This will apply css for odd child */
+
+/* Before/After selectors */
+header::before{
+  background: url('https://source.unsplash.com/collection/190727/1600x900') no-repeat center center/cover;
+  content: "";
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.3;
+}
+
+/* Shadow */
+p{
+   box-shadow: offset-x offset-y color;
+   box-shadow: offset-x offset-y blur-radius color;
+   box-shadow: offset-x offset-y blur-radius spread-radius color;
+
+   /* box-shadow: 10px 13px green; */
+   /* box-shadow: -10px -13px green; */
+   /* box-shadow: 7px 5px 10px green; */
+   /* box-shadow: -7px -5px 10px green; */
+   /* box-shadow: -7px -5px 10px 34px green; */
+   /* box-shadow: -7px -5px 10px 34px rgba(71, 172, 172, 0.5); */
+    box-shadow: inset 3px 5px green; /* To make all these changes inside the box, we can use the inset property */
+}
+
+:root{
+  --primary-color: blue;
+  --danger-color: red;
+  --maxw: 333px;
+  background-color: var(--primary-color);
+  border: 2px solid var(--danger-color);
+  box-shadow: 3px 3px var(--box-color);
+}
+
+/* Animations */
+p{
+  animation-name: coder;
+  animation-duration: 8s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forward;
+  animation-timing-function: ease-in ;
+ /* ease-in
+After applying this, the animation will start slowly and becomes fast towards the end.
+
+ease-out
+After applying this, the animation will begin fastly and become slow towards the end.
+
+ease-in-out
+After applying this, the animation will start slowly, then become fast in the midway, and ends slowly. */
+animation-delay: 4s; /*after time the animation start*/
+animation-direction: reverse;
+
+/* These properties can be set using this shorthand */
+animation: animation-name animation-duration animation-timing-function animation-delay animation-iteration-count animation-fill-mode;
+/* example */
+animation: harry 5s ease-in 1s 12 backwards; 
+}
+
+@keyframes coder {
+  from {
+      width: 200px;
+  }
+  /* The keyframes are used to make the animation. From and to are used to decide how the animation will move in the webpage. In the above example, we are moving the animation harry 1 from 200px to 1400px. These types of animations are used to design scroll bars or progress bars on the webpage. */
+  to {
+      width: 1400px;
+  } 
+}
+/* another way of adding keyframe */
+@keyframes hcoder {
+  0%{
+      top:0px;
+      left:0px;
+  }
+  25%{
+      top: 250px;
+      left: 0px;
+  }
+  75%{
+      top: 250px;
+      left: 250px;
+  }
+  100%{
+      top: 0px;
+      left: 250px;
+  }
+  
+}
+
+/* Transition */
+p{
+  transition-property: background-color;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
+  /* ease-in
+After applying this, the animation will start slowly and becomes fast towards the end.
+
+ease-out
+After applying this, the animation will begin fastly and become slow towards the end.
+
+ease-in-out
+After applying this, the animation will start slowly, then become fast in the midway, and ends slowly. */
+  transition-delay: 2s;
+  transition: transition-property transition-duration transition-timing-function transition-delay;
+  /* example */
+  transition: all 1s ease-in-out 2s;
+}
+
+/* Transform */
+p{
+  transform: rotate(45deg); /*to rotate*/
+  transform: skew(40deg); /*to bend/add 3d effect*/
+  transform: scale(2); /*to change size*/
+  transform: translateX(123px); /*to move the object in x-ax*/
+  transform: translateY(123px); /*to move the object in y-axis*/
+  /* also writen as */
+  transform: translate(123px, 123px);
+}
+
+/* Grid */
+p{
+  display: grid;  /* Initialize the container as a grid */
+  grid-template-columns: 300px 100px 100px; /* create 3 column of width 300px 100px 100px */
+  grid-template-columns: 300px 100px auto;  /* create 3 column of width 300px 100px third will get all the remaining part*/
+  grid-template-columns: 1fr 4fr 1fr; /* create 3 column of width as ratio 1:4:1*/
+  grid-template-columns: repeat(3, auto); /* if many object are present then automatically fill 3 column of infinite row*/
+  grid-gap: 2rem; /* gap between the grid*/
+  grid-column-gap: 7rem; /* gap between column */
+  grid-row-gap: 1rem; /* gap between row */
+
+  grid-template-rows: 1fr 1fr 4fr; /* to decde number of rows*/
+  grid-template-columns: 1fr 4fr 2fr; /* to decde number of columns*/
+  grid-auto-rows: 2fr; /*next row is 2 timer larger than normal*/
+
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
+  /* The benefit of auto-fit is that it will repeat the number of times it is necessary. The minmax will decide the minimum width given to any rows or column */
+
+  /* grid-column-start: 1;
+   grid-column-end: 3;
+   grid-row-start: 1;
+   grid-row-end: 3; */
+   grid-column: 1 / span 3; /*merge 1,2 column box*/
+   grid-row: 1 / span 3;  /*merge 1,2 row box*/
+  #navbar{
+   grid-area: navbar;
+        }
+  #section{
+   grid-area: section;
+        }
+  #aside{
+    grid-area: aside;
+        }
+  footer{
+    grid-area: footer;
+        }      
+
+  grid-template-areas: 
+  'navbar navbar navbar navbar' /*give all part to navbar*/
+  'section section section aside' /*give 3 part to section and 1 part to aside of viewport*/
+  'footer footer footer footer '; /*give all part to footer*/
+  
+  @media only screen and (max-width:300px) {
+    body {
+      background-color: red;
+      grid-template-areas: 
+      'navbar navbar navbar navbar'
+      'section section section aside' 
+      'footer footer footer footer ';
+    }
+    @media only screen and (min-width: 300px) and (max-width:500px) {
+      body {
+        background-color: blue;
+        grid-template-areas: 
+        'navbar navbar navbar navbar'
+        'section section aside aside' 
+        'footer footer footer footer ';
+    }
+@media (min-width: 500px) and (max-width:800px) {
+    body {
+        background-color: yellow;
+        #aside {
+          display: none ;
+        }
+    }
+@media (min-width: 800px) {
+    body {
+        background-color: green;
+    }
+}
+}

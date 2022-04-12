@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="This is description" />
+    <meta name="keywords" content="html, html tutorials, web development" />
+    <meta name="robots" content="INDEX, FOLLOW" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stlyesheet" href="../CSS/code.css" />
+    <!-- This is how you include external css -->
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap"
+    />
+    <!-- This is how you include font style -->
+
+    <script src="code.js"></script>
+    <!-- This is how you include external JavaScript -->
+
+    <style>
+      /* this is how you include internal css */
+    </style>
+
+    <script>
+      /* this is how you include internal javascript*/
+    </script>
+  </head>
+  <body>
+    <a href="https://google.com" target="_blank">Go to Google</a>
+    <!-- [target - to open in new tab or window] -->
+    <a href="code.html" target="_blank">My File</a>
+    <img
+      src="https://source.unsplash.com/1600x900/?nature,water"
+      alt="Error loading image"
+      width=""
+      height=""
+    />
+    <h1>heading</h1>
+    <!-- [1-6] -->
+    <p>lorem 20</p>
+    <p style="color: red">
+      This tutorial will teach you everything you need to know about CSS
+    </p>
+    <!--inline css  -->
+    <span> lorem 20 </span>
+    <!-- span.class#id  |  "." is for class and "#" is for id -->
+
+    <!-- List -->
+    <ul type="circle">
+      <!-- [circle,square] -->
+      <li>This is first item of my unordered list</li>
+      <li>This is second item of my unordered list</li>
+      <!-- li.class#id{item$}*4
+<li class="class" id="id">item1</li>
+<li class="class" id="id">item2</li>
+<li class="class" id="id">item3</li>
+<li class="class" id="id">item4</li> -->
+
+      <ul>
+        <li>Another one</li>
+        <li>Another two</li>
+        <li>Another three</li>
+      </ul>
+
+      <li>This is third item of my unordered list</li>
+    </ul>
+
+    <ol type="a">
+      <!-- [a,A,I,1] -->
+      <li>This is first item of my ordered list</li>
+      <li>This is second item of my ordered list</li>
+      <li>This is third item of my ordered list</li>
+    </ol>
+
+    <!-- Tables -->
+    <h3>HTML Table</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Employee Id</th>
+          <th>Employee Role</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Harry</td>
+          <td>34343</td>
+          <td>Programmer</td>
+        </tr>
+        <tr>
+          <td>Rohan Das</td>
+          <td>3483</td>
+          <td>HTML Expert</td>
+        </tr>
+        <tr>
+          <td>Shubham</td>
+          <td>7564</td>
+          <td>Android Developer</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Form -->
+    <form action="backend.php">
+      <label for="name">Name</label>
+
+      <input
+        type="text"
+        name="myName"
+        id="name"
+        placeholder="Enter Your Name"
+      />
+
+      Role: <input type="text" name="myRole" placeholder="Enter Your Role" />
+
+      Email:
+      <input type="email" name="myEmail" placeholder="Enter Your Email" />
+
+      Date: <input type="date" name="myDate" />
+
+      Bonus:
+      <input type="number" name="myBonus" placeholder="Enter Your Bonus" />
+
+      Password:
+      <input
+        type="password"
+        name="myPassword"
+        placeholder="Enter Your Password"
+      />
+
+      Are you eligible?: <input type="checkbox" name="myEligibility" checked />
+      <!-- [checked - to checked default ] -->
+
+      Gender: Male <input type="radio" name="myGender" /> Female
+      <input type="radio" name="myGender" /> Other
+      <input type="radio" name="myGender" />
+
+      Write about yourself:
+      <textarea name="myText" cols="90" rows="10"></textarea>
+
+      <label for="car">Car</label>
+      <select name="myCar" id="car">
+        <option value="ind">Indica</option>
+        <option value="swf" selected>Swift</option>
+        <!-- [selected - to select this as default ] -->
+      </select>
+      <input type="submit" value="Submit Now" />
+      <input type="reset" value="Reset Now" />
+
+      <!-- semantic elements-
+            <header>
+            <nav>
+            <section>
+            <article>
+            <footer> -->
+    </form>
+    <details>
+      <summary>ALWAYS VISIBLE</summary>
+      lorem20
+      <!-- VISIBLE ON CLICK-->
+    </details>
+    <button class="btn">Contact us</button>
+    <!-- to ceate button -->
+    <!-- Auto scroll -->
+    <ul>
+      <li class="item"><a href="#home">Home</a></li>
+      <li class="item"><a href="#services-container">Services</a></li>
+      <li class="item"><a href="#client-section">Our Clients</a></li>
+      <li class="item"><a href="#contact">Contact Us</a></li>
+    </ul>
+  </body>
+</html>
